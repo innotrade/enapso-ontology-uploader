@@ -1,26 +1,30 @@
 {
-	"name": "enapso-ontology-uploader",
-	"version": "1.0.0",
-	"description": "enapso automated ontology uploader",
-	"main": "index.js",
-	"directories": {
-		"lib": "lib"
-	},
-	"dependencies": {
-		"is-json": "^2.0.1"
-	},
-	"devDependencies": {},
-	"scripts": {
-		"test": "echo \"Error: no test specified\" && exit 1"
-	},
-	"repository": {
-		"type": "git",
-		"url": "git+https://github.com/innotrade/enapso-ontology-uploader.git"
-	},
-	"author": "",
-	"license": "ISC",
-	"bugs": {
-		"url": "https://github.com/innotrade/enapso-ontology-uploader/issues"
-	},
-	"homepage": "https://github.com/innotrade/enapso-ontology-uploader#readme"
+  "name": "enapso-ontology-uploader",
+  "version": "1.0.0",
+  "description": "enapso automated ontology uploader",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "dependencies": {
+    "@innotrade/enapso-graphdb-admin": "^1.1.7",
+    "@innotrade/enapso-graphdb-client": "^1.8.0",
+    "chai": "^4.2.0",
+    "is-json": "^2.0.1",
+    "mocha": "^8.1.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/innotrade/enapso-ontology-uploader.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/innotrade/enapso-ontology-uploader/issues"
+  },
+  "homepage": "https://github.com/innotrade/enapso-ontology-uploader#readme"
 }

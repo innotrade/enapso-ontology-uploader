@@ -1,0 +1,46 @@
+{
+  "ontologies": [
+    {
+      "filename": "./test/EnapsoTest.owl",
+
+      "id": "test2",
+
+      "repository": "Test",
+
+      "username": "admin",
+
+      "password": "root",
+
+      "dburl": "http://localhost:7200",
+
+      "baseurl": "http://localhost:7200",
+
+      "format": "application/rdf+xml",
+
+      "baseIRI": "http://ont.enapso.com/test#",
+      "context": "http://ont.enapso.com/test"
+    },
+
+    {
+      "filename": "./test/EnapsoAuthorization.owl",
+
+      "id": "test3",
+
+      "repository": "enapso-admin",
+
+      "username": "admin",
+
+      "password": "root",
+
+      "dburl": "http://localhost:7200",
+
+      "baseurl": "http://localhost:7200",
+
+      "format": "application/rdf+xml",
+
+      "baseIRI": "http://ont.enapso.com/auth#",
+
+      "context": "http://ont.enapso.com/auth"
+    }
+  ]
+}
