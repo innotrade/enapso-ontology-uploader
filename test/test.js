@@ -14,7 +14,7 @@ describe('Enapso File Watcher Test Cases', function () {
     });
 
     it('Add Multiple Ontology Files in Watcher', function () {
-        const jsonData = require("./con.json");
+        const jsonData = require("./configs.json");
         EnapsoOntologyUploader.add(jsonData)
             .then((res) => {
              expect(res).to.have.property('statusCode', 200);
