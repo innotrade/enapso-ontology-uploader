@@ -1,6 +1,6 @@
 # enapso-ontology-uploader
 
-enapso automated ontology uploader in which we add ontology files in watcher and if any change occur in ontology file then it automatically upload the updated ontology file in GraphDB.
+enapso automated ontology uploader in which you add ontology files in watcher and if any change occur in ontology file then it automatically upload the updated ontology file in GraphDB.
 To discuss questions and suggestions with the enapso, we'll be happy to meet you in our forum at https://www.innotrade.com/forum/.
 
 # Add Method
