@@ -3,13 +3,24 @@ const jsonData = require("./config.json");
 
 EnapsoOntologyUploader.add(jsonData)
 	.then((res) => {
-		// console.log("here in response ", res);
+		console.log("here in response ", res);
 	})
 	.catch((err) => {
 		console.log("here in cathc", err);
 	});
 
-EnapsoOntologyUploader.watch();
+EnapsoOntologyUploader.watch(function (error, result) {
+	if (error) {
+		console.log("here in error");
+		console.log(error);
+	} else {
+		console.log("here in result", result);
+	}
+});
+
+// EnapsoFileWatcher.on("fileChanged", function (message) {
+// 	console.log(message);
+// });
 
 // console.log(jsonData.ontologies[0]);
 // const GRAPHDB_BASE_URL = jsonData.ontologies[0].baseurl,
