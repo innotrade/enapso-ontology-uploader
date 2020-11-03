@@ -1,21 +1,25 @@
-const { EnapsoOntologyUploader } = require("../index");
-const jsonData = require("./config.json");
+// Innotrade Enapso GraphDB Ontology Uploader
+// (C) Copyright 2019-2020 Innotrade GmbH, Herzogenrath, NRW, Germany
+// Author(s): Ashesh Goplani and Muhammad Yasir
+
+const { EnapsoOntologyUploader } = require('../index');
+const jsonData = require('./config.json');
 
 EnapsoOntologyUploader.add(jsonData)
-	.then((res) => {
-		console.log("here in response ", res);
-	})
-	.catch((err) => {
-		console.log("here in cathc", err);
-	});
+    .then((res) => {
+        console.log('here in response ', res);
+    })
+    .catch((err) => {
+        console.log('here in cathc', err);
+    });
 
 EnapsoOntologyUploader.watch(function (error, result) {
-	if (error) {
-		console.log("here in error");
-		console.log(error);
-	} else {
-		console.log("here in result", result);
-	}
+    if (error) {
+        console.log('here in error');
+        console.log(error);
+    } else {
+        console.log('here in result', result);
+    }
 });
 
 // EnapsoFileWatcher.on("fileChanged", function (message) {
